@@ -1,0 +1,26 @@
+/*********************************/
+/************ GENERAL ************/
+/*********************************/
+
+body {
+    font-family: Be Vietnam Pro, serif;
+    background-image: url("/images/bg-bottom.svg"), url("/images/bg-top.svg");
+    background-size: 30%;
+    background-position: left bottom, right top;
+    background-repeat: no-repeat;
+    // display: grid;
+}
+
+// .sketch-snip {
+//     position: absolute;
+//     z-index: -10;
+//     bottom: -10px;
+//     left: 60px;
+//     background-image: url("/images/sketch-snip.png");
+//     // background: pink;s
+//     width: 15.625rem;
+//     width: clamp(15.625rem, 13.125rem + 12.5vw, 28.125rem);
+//     aspect-ratio: 1/1;
+//     background-size: 70%;
+//     background-repeat: no-repeat;
+// }

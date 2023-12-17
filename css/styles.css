@@ -1,0 +1,309 @@
+/*********************************/
+/*********** CSS RESET ***********/
+/*********************************/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and inherit fonts for inputs and buttons */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core html defaults */
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  overflow: auto;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/*********************************/
+/************ GENERAL ************/
+/*********************************/
+body {
+  font-family: Be Vietnam Pro, serif;
+  background-image: url("/images/bg-bottom.svg"), url("/images/bg-top.svg");
+  background-size: 30%;
+  background-position: left bottom, right top;
+  background-repeat: no-repeat;
+}
+
+/*********************************/
+/************ WELCOME ************/
+/*********************************/
+.welcome {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2rem 3rem;
+  margin-inline: clamp(1rem, 0.6rem + 2vw, 3rem);
+}
+
+.nav-list {
+  justify-self: flex-end;
+  display: flex;
+  gap: clamp(0.25rem, 4vw, 2rem);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav__resume-link {
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.intro {
+  display: grid;
+  gap: 1rem;
+  place-items: center;
+  margin-top: 3rem;
+  margin-top: clamp(3rem, 2.4rem + 3vw, 6rem);
+  margin-inline: 2rem;
+  margin-inline: clamp(2rem, 1.4rem + 3vw, 5rem);
+}
+
+.intro__img {
+  max-width: 15.625rem;
+  max-width: clamp(15.625rem, 13.125rem + 12.5vw, 28.125rem);
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  justify-self: center;
+}
+
+.avatar {
+  object-fit: cover;
+}
+
+.title {
+  font-weight: 500;
+  font-size: clamp(2rem, 2.8vw, 3rem);
+  text-align: center;
+  /* padding-right: clamp(1rem, 3vw, 8rem); */
+}
+
+.title span {
+  font-weight: 600;
+}
+
+.intro__tech-stack {
+  margin-top: 1rem;
+}
+
+.sub-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.intro__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+@media (min-width: 1230px) {
+  .intro {
+    /* grid-template-columns: 1fr;
+    grid-template-rows: .5fr 1fr;*/
+    /* gap: clamp(2rem, 5vw, 5rem);  */
+  }
+  .intro__img {
+    /* margin-left: clamp(2rem, 7vw, 5rem); */
+  }
+}
+@media (min-width: 800px) {
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 1fr;
+  }
+  .intro__img {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  .intro__list, .sub-title, .title {
+    justify-content: start;
+    text-align: start;
+  }
+}
+/*********************************/
+/************ PROJECTS ***********/
+/*********************************/
+.projects {
+  display: grid;
+  place-content: center;
+  gap: 2rem;
+  margin-inline: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project {
+  display: grid;
+  grid-template-rows: 300px 1fr;
+  gap: 2rem;
+  padding-inline: 2rem;
+}
+
+.img-container.one {
+  background-image: url("/images/spa-selene.png");
+  background-position: 90%;
+}
+
+.img-container:hover {
+  background-color: rgba(0, 0, 0, 0.192);
+  background-blend-mode: multiply;
+}
+
+.proj-desc {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  gap: 1rem;
+  align-content: start;
+}
+
+.proj-desc:hover {
+  text-decoration: none;
+}
+
+.proj-desc:hover .proj-desc-title {
+  text-decoration: underline;
+}
+
+.proj-desc-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.proj-desc-tech-stack {
+  display: flex;
+  gap: 2rem;
+}
+
+.proj-desc-tech-stack div {
+  background-color: pink;
+  align-self: end;
+}
+
+@media (min-width: 800px) {
+  .project {
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+.img-container.two {
+  background-image: url("/images/david-lezcano-m-Doa-GTrUw-unsplash.jpg");
+  background-position: 20% 70%;
+}
+
+.img-container {
+  background-size: cover;
+  border-radius: 2rem;
+  min-height: 200px;
+}
+
+.spa-selene {
+  margin: 2rem 6rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.feature-title {
+  font-size: 4rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+.feature-heading-group {
+  text-align: center;
+}
+
+.feature-link {
+  padding: 0.5rem 1rem;
+  background-color: rgb(245, 52, 84);
+  border-radius: 0.5rem;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.feature-link:hover {
+  background-color: rgb(250, 5, 46);
+  text-decoration: none;
+}
+
+.feature-heading2 {
+  font-size: 2rem;
+}
+
+footer {
+  margin-top: 5rem;
+  background-color: black;
+  height: 200px;
+}/*# sourceMappingURL=styles.css.map */

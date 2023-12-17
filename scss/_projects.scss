@@ -1,0 +1,111 @@
+/*********************************/
+/************ PROJECTS ***********/
+/*********************************/
+
+.projects {
+    display: grid;
+    place-content: center;
+    gap: 2rem;
+    margin-inline: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+// .grid-container {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     gap: 3rem;
+//     max-width: 90%;
+// }
+
+.project {
+    display: grid;
+    grid-template-rows: 300px 1fr;
+    gap: 2rem;
+    padding-inline: 2rem;
+    // background-color: red;
+    // height: 500px;
+}
+
+.img-container.one {
+    background-image: url("/images/spa-selene.png");
+    background-position: 90%;
+    // background-size: cover;
+    // border-radius: 2rem;
+    // height: 100%;
+}
+
+.img-container:hover {
+    background-color: rgba(0, 0, 0, 0.192);
+    background-blend-mode: multiply;
+}
+
+
+
+.proj-desc {
+    // background-color: pink;
+    // padding: 1rem 2rem;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 1rem;
+    // align-items: start;
+    // justify-content: start;
+    align-content: start;
+}
+
+.proj-desc:hover {
+    text-decoration: none;
+}
+
+.proj-desc:hover .proj-desc-title{
+    text-decoration: underline;
+}
+.proj-desc-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+// .img-container:hover, .proj-desc-title {
+//     text-decoration: underline;
+// }
+
+.proj-desc-tech-stack {
+    display: flex;
+    gap: 2rem;
+}
+
+.proj-desc-tech-stack div {
+    background-color: pink;
+    align-self: end;
+}
+
+@media (min-width: 800px) {
+    // .projects {
+    //     display: grid;
+    //     grid-template-columns: 1fr;
+    //     // background-color: green;
+    // }
+    .project {
+        // width: 1000px;
+        min-height: 400px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // background-color: pink;
+        grid-template-rows: 1fr;
+    }
+
+}
+
+.img-container.two {
+    background-image: url("/images/david-lezcano-m-Doa-GTrUw-unsplash.jpg");
+    background-position: 20% 70%;
+    // background-size: cover;
+    // border-radius: 2rem;
+    // min-height: 200px;
+}
+
+.img-container {
+    background-size: cover;
+    border-radius: 2rem;
+    min-height: 200px;
+}

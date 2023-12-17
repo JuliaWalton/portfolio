@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
     <!-- style sheet -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,31 +17,30 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <section class="nav">
-                <a class="nav__resume-link" href="#">Julia Walton</alt></a>
-                <!-- <nav class="primary-navigation"> -->
-                    <ul role="list" class="nav-list">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>   
-                <!-- </nav> -->
-        </section>
-    </header>
-
-    <main> 
-        <section class="intro">
-                    <div class="intro__img">
-                        <img class="avatar" src="selfie.JPG" alt="myavatar" 
-                        height='100%' width= '100%'>
-                    </div>
-                    <div class="intro__text-content">
-                        <h1 class="title">
-                            Hi, <span>I'm Julia - </span>an enthusiastic <span>Front End Developer</span>
-                            with a background in architecture.
-                        </h1>
+    <article class="welcome">
+        <header>
+            <section class="nav">
+                    <a class="nav__resume-link" href="/index.html">Julia Walton</alt></a>
+                    <!-- <nav class="primary-navigation"> -->
+                        <ul role="list" class="nav-list">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    <!-- </nav> -->
+            </section>
+        </header>
+            <section class="intro">
+                <div class="intro__text-content">
+                    <h1 class="title">
+                        Hi, <span>I'm Julia - </span>an enthusiastic <span>Front End Developer</span>
+                        with a background in architecture.
+                    </h1>
+                </div>
+                        <div class="intro__img">
+                            <img class="avatar" src="/images/selfie.JPG" alt="myavatar"
+                            height='100%' width= '100%'>
+                        </div>
                         <div class="intro__tech-stack">
                             <p class="sub-title">Tech Stack:</p>
                             <div class="intro__list">
@@ -59,25 +58,69 @@
                                 <p>FIGMA</p>
                             </div>
                         </div>
-                    </div>
-        </section>
-        <section class="projects">
-            <div class="grid-container">
+                        <div class="sketch-snip">
+                        </div>
+                        
+            </section>
+    </article>
+        <main> 
+        <article class="projects">
+            <!-- <div class="grid-container"> -->
                 <div class="project one">
-                    <!-- <img src="images/spa-selene.png" alt=""> -->
+                    <a href="/spa-selene/spa.html" class="img-container one">
+                    </a>
+                    <a href="/spa-selene/spa.html" class="proj-desc one">
+                        
+                        <div class="proj-desc-container">
+                            <h2 class="proj-desc-title">Spa Selene</h2>
+                            <p class="proj-desc-date">Oct 2023 - Dec 2023</p>
+                        </div>
+                        <div class="proj-desc-text">
+                            <p class="summary">The goal of this project was to build out a complete site for a given buisness. I chose to implement this for a thoretical spa company after I struggled to book an appointment online at a local med spa in my area. The completed project captures customers attention with clear and engaging UI, while improving upon the form validation functionality that buisnesses and customers rely on to schedule services. </p>
+                        </div>
+                        <div class="proj-desc-tech-stack">
+                            <div>HTML</div>
+                            <div>CSS</div>
+                            <div>SASS</div>
+                            <div>JavaScript</div>
+                            <div>Photoshop</div>
+                        </div>
+                    </a>
                 </div>
                 <div class="project two">
-                    <!-- <img src="images/david-lezcano-m-Doa-GTrUw-unsplash.jpg" alt=""> -->
+                    <div class="img-container two">
+                    </div>
+                    <div class="proj-desc one">
+                        <div class="proj-desc-container">
+                            <h2 class="proj-desc-title">SearchPaws</h2>
+                            <p class="proj-desc-date">Dec 2023 - Current</p>
+                        </div>
+                        <div class="proj-desc-text">
+                            <p class="summary">The goal of this project was to build out a complete site for a given buisness. I chose to
+                                implement this for a thoretical spa company after I struggled to book an appointment online at a local med
+                                spa in my area. The completed project captures customers attention with clear and engaging UI, while
+                                improving upon the form validation functionality that buisnesses and customers rely on to schedule services.
+                            </p>
+                        </div>
+                        <div class="proj-desc-tech-stack">
+                            <div>HTML</div>
+                            <div>CSS</div>
+                            <div>SASS</div>
+                            <div>JavaScript</div>
+                            <div>Photoshop</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="project three">
-                    <!-- <img src="images/desktop-design.jpg" alt=""> -->
+                <!-- <div class="project three">
+                    
                 </div>
                 <div class="project four">
-                    <!-- <img src="images/desktop-design.jpg" alt=""> -->
-                </div>
-            </div>
-        </section>
+                </div> -->
+            <!-- </div> -->
+            </article>
     </main>
+    <footer></footer>
+    
 
 </body>
 </html>
