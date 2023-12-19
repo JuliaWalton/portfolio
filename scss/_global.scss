@@ -3,13 +3,18 @@
 /*********************************/
 
 body {
-    font-family: Be Vietnam Pro, serif;
+    font-family: "Be Vietnam Pro", serif;
     background-image: url("/images/bg-bottom.svg"), url("/images/bg-top.svg");
     background-size: 30%;
     background-position: left bottom, right top;
     background-repeat: no-repeat;
     // display: grid;
 }
+
+.bg-img {
+    display: none;
+}
+
 
 // .sketch-snip {
 //     position: absolute;

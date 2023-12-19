@@ -2,6 +2,8 @@
     margin: 2rem 6rem; 
     display: grid;
     gap: 2rem;
+    place-items: center;
+    font-size: 1.15rem;
 }
 
 .feature-title {
@@ -16,7 +18,7 @@
 
 .feature-link {
     padding: .5rem 1rem;
-    background-color: rgb(245, 52, 84);
+    background-color:rgb(0, 0, 0);
     border-radius: .5rem;
     font-weight: bold;
     color: white;
@@ -24,11 +26,87 @@
 }
 
 .feature-link:hover {
-    background-color: rgb(250, 5, 46);
+    background-color: rgb(255, 98, 171);
     text-decoration: none;
-    
+}
+.img-container {
+    width: 1500px;
+    height: 600px;
+    object-fit: contain;
+}
+
+.screenshot-container {
+    width: 490px;
+    object-fit: contain;
+    margin-left: 4rem;
+    display: flex;
+    gap: 1rem;
+}
+.screenshot-container2 {
+    width: 660px;
+    object-fit: contain;
+    margin-left: 4rem;
+}
+
+.feature-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    object-position: 100% 75%;
+}
+
+.feature-screenshot {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.feature-main-list {
+    margin-left: 3rem;
+    list-style-type: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.feature-main-list > .feature-sub-list {
+    margin-left: 3rem;
+}
+
+.feature-sub-list {
+    margin-left: 6rem;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+.feature-writeup {
+    max-width: 1400px;
+    display: grid;
+    gap: 2rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1rem 3rem;
 }
 
 .feature-heading2 {
     font-size: 2rem;
+    font-weight: bold
 }
+
+.feature-heading3 {
+    font-size: 1.8rem;
+    margin-left: 4rem;
+    // text-decoration: underline;
+    // border-bottom: 2px solid black;
+    // margin-bottom: .5rem;
+}
+
+.feature-desc {
+    margin-left: 4rem;
+}
+
+
+.feature-heading4 {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
