@@ -15,6 +15,34 @@ body {
     display: none;
 }
 
+/*** Works on common browsers ***/
+::selection {
+    background-color: rgb(176, 189, 230);
+    color: #fff;
+}
+
+/*** Mozilla based browsers ***/
+::-moz-selection {
+    background-color: rgb(176, 189, 230);
+    color: #fff;
+}
+
+/***For Other Browsers ***/
+::-o-selection {
+    background-color: rgb(176, 189, 230);
+    color: #fff;
+}
+
+::-ms-selection {
+    background-color: rgb(176, 189, 230);
+    color: #fff;
+}
+
+/*** For Webkit ***/
+::-webkit-selection {
+    background-color: rgb(176, 189, 230);
+    color: #fff;
+}
 
 // .sketch-snip {
 //     position: absolute;

@@ -1,0 +1,18 @@
+.resume {
+    display: grid;
+    place-items: center;
+}
+
+.resume-container {
+    width: 700px;
+    height: 860px; 
+}
+
+.resume-img {
+    width: 100%;
+    height: 100%;
+}
+
+.resume .feature-link:hover {
+    background-color: rgb(176, 189, 230);
+}
