@@ -7,6 +7,9 @@
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💠</text></svg>">
 
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
     <!-- style sheet -->
     <link rel="stylesheet" href="css/styles.css">
 
@@ -42,10 +45,15 @@
                         with a background in architecture.
                     </h1>
                 </div>
-                        <div class="intro__img">
+                    <div class="ring">
+                        <i style="--clr:#6699ff;"></i>
+                        <i style="--clr:#050563;"></i>
+                        <i style="--clr:rgb(176, 189, 230);"></i>
+                       <div class="intro__img"> 
                             <img class="avatar" src="images/profile-pic.JPG" alt="myavatar"
                             height='100%' width= '100%'>
                         </div>
+                    </div>
                         <div class="intro__tech-stack">
                             <p class="sub-title">Tech Stack:</p>
                             <div class="intro__list">
@@ -127,11 +135,23 @@
             </article>
     </main>
     <footer>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, laborum?
-        </p>
-        <button>Email Me</button>
-        <button>Call Me</button>
-        <button>Socials</button>
+        <div class="flexbox">
+            <div class="column">
+                <h1 class="title">Available for work opportunities!</h1>
+                <p>Have a project your team needs help with?</p>
+                <p>Send me an <a class="email-me" href="mailto:hiitsjuliaw@gmail.com">email.</a></p>
+            </div>
+            <div class="column">
+                <button><i class="fas fa-envelope"></i></button>
+                <button><i class="fas fa-phone"></i></button>
+                <button>LinkedIn</button>
+                <button>GitHub</button>
+            </div>
+        </div>
+        <!-- <div class="column"> -->
+        <p class="copyright">© 2024 copyright all right reserved</p>
+        <!-- </div> -->
+    
     </footer>
     
 
