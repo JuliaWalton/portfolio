@@ -7,18 +7,18 @@ footer {
     display: grid;
 }
 
-.flexbox {
+.footer-container {
     display: flex;
     // grid-template-columns: 1fr 1fr;
-    gap: 4rem;  
+    gap: 8rem;  
     // justify-items: center;
     justify-content: center;
     align-items: center;
 
 }
 
-footer .title {
-    font-size: 1.5rem;
+footer .footer-title {
+    font-size: 2rem;
     padding-bottom: .2rem;
 }
 
@@ -27,9 +27,29 @@ footer .title {
     color: rgb(176, 189, 230);
 }
 
+.footer-text p {
+    font-size: 1.2rem;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
 .copyright {
     color:rgba(255, 255, 255, 0.539);
     justify-self: center;
     align-self: end;
     // margin: auto;
+}
+
+.footer-icons a > .icon {
+    max-width: 60px;
+}
+
+.footer-icons i {
+    color: white;
+    font-size: 2.75rem;
+    margin-top: 5px;
 }

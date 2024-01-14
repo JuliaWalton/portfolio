@@ -49,9 +49,11 @@
     // align-items: start;
     // justify-content: start;
     align-content: start;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2rem;
 }
 
-.project.one:hover {
+.project:hover {
     text-decoration: none;
 
         .img-container {
@@ -120,3 +122,7 @@
     // min-height: 200px;
 }
 
+
+.page {
+    margin-bottom: 5rem;
+}
