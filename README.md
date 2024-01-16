@@ -13,69 +13,36 @@ Thanks for checking out my Portfolio!
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
 - [Author](#author)
 
 ## Overview
 
 ## The goal
 
-The goal for this portfolio was to effectively display my experience and competency with front end skills
-build out a form validation component with multiple input fields and custom functions for each. The project should also be visually appealing.
+The goal for this portfolio was to produce a site with a clean UI to displays key projects that reflect my experience and competency with front end patterns. I also wanted the project to feature different sections where visitors could gain further insight about me and have ease of access to my contact information and resume.
 
 Your users should be able to:
 
-- View the optimal layout for the component depending on their device's screen size
+- Browse through a list of specified projects
+- Read descriptions about each project
+- Visit the Live Project hosted on Github
+- Download my resume
+- Contact me easily
+- Learn more about my personality and previous work experience
+- View the optimal layout for a component depending on their device's screen size
 - See hover states for all interactive elements on the page
-- See specific error messages when an input is invalid
 
 ## Links
 
-Live Site URL: [https://juliawalton.github.io/form-validator/](https://juliawalton.github.io/form-validator/)
+Live Site URL: [https://juliawalton.github.io/portfolio/](https://juliawalton.github.io/portfolio/)
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS3
-- CSS Grid
-- JavaScript
-- Fetch API
-- Free Meal DB API
-
-## What I learned
-
-This project was great to practice fetching data from an API. It's important to familiarize oneself with the documentation of a given API to understand how it can be utilized. After reviewing the documentation I played around with ways I could add more functinality to the application, like fetching and displaying the categories for meals.
-
-```js
-// get a collection of meals by category and display them
-categoryBtns.addEventListener("click", (e) => {
-  singleMeal.innerHTML = "";
-
-  if (e.target.classList.contains("food-category")) {
-    // console.log(e.target.textContent);
-    const foodCategory = e.target.textContent;
-    resultHeading.innerHTML = `<h2>Search results for: ${foodCategory}</h2>`;
-
-    fetch(
-      `https://www.themealdb.com/api/json/v1/1/filter.php?c=${foodCategory}`
-    )
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        foods.innerHTML = data.meals
-          .map((meal) => {
-            return `<div class="meal">
-                                <img src="${meal.strMealThumb}" alt="${meal.strMeal}" />
-                                <div class="meal-info" data-mealID="${meal.idMeal}">
-                                    <h3>${meal.strMeal}</h3>
-                                </div>
-                            </div>`;
-          })
-          .join("");
-      });
-  }
-});
-```
+- CSS Grid and Flexbox
+- SASS compiler
+- SASS Variables
 
 ## Author
 

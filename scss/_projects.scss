@@ -1,62 +1,31 @@
-/*********************************/
-/************ PROJECTS ***********/
-/*********************************/
+@use 'root';
+// *******************************************
+// project page styles
+// *******************************************
 
 .projects {
     display: grid;
+    max-width: 1200px;
     place-content: center;
     gap: 2rem;
-    margin-inline: 2rem;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
-// .grid-container {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-//     gap: 3rem;
-//     max-width: 90%;
-// }
-
 .project {
     display: grid;
-    grid-template-rows: 400px 1fr;
-    gap: 2rem;
-    padding-inline: 2rem;
-    max-width: 1400px;
-    // background-color: red;
-    // height: 500px;
+    grid-template-rows: 1fr auto;
+    gap: 3rem;
+    gap: clamp(3rem, 2rem + 5vw, 8rem);
+    margin-inline: 2rem;
 }
 
-.img-container.one {
-    background-image: url("../images/spa-selene-coverphoto.png");
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    // border-radius: 2rem;
-    // height: 100%;
-}
-
-
-
-.proj-desc {
-    // background-color: pink;
-    // padding: 1rem 2rem;
-    display: grid;
-    grid-template-rows: auto auto 1fr auto;
-    gap: 1rem;
-    // align-items: start;
-    // justify-content: start;
-    align-content: start;
-    background-color: rgb(255, 255, 255);
-    border-radius: 2rem;
+.page {
+    margin-bottom: 5rem;
 }
 
 .project:hover {
     text-decoration: none;
-
-        .img-container {
+        .proj-img-container {
         background-color: rgba(209, 209, 209, 0.2);
         background-blend-mode: multiply;
         }
@@ -65,23 +34,43 @@
         }
 }
 
-// 
-.proj-desc-title {
-    font-size: 2rem;
-    font-weight: bold;
+.proj-desc {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 1rem;
+    align-content: start;
+    background-color: root.$neutral-white;
+    border-radius: root.$radius;
 }
 
-// .img-container:hover, .proj-desc-title {
-//     text-decoration: underline;
-// }
+.proj-desc-title {
+    font-size: 2rem;
+    font-weight: root.$fw-bold;
+}
+
+.proj-desc-date {
+    font-size: root.$fs-small;
+}
+
+.proj-img-container {
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    border-radius: root.$radius;
+}
+
+.proj-img-container.one {
+    background-image: url("../images/spa-selene-coverphoto.png");
+}
+
+.proj-img-container.two {
+    background-image: url("../images/searchPaws-coverphoto.png");
+}
 
 .proj-desc-tech-stack {
     display: flex;
+    align-items: start;
     gap: 2rem;
-}
-
-.proj-desc-tech-stack div {
-    align-self: end;
 }
 
 .proj-desc-tech-stack img {
@@ -89,40 +78,11 @@
 }
 
 @media (min-width: 800px) {
-    // .projects {
-    //     display: grid;
-    //     grid-template-columns: 1fr;
-    //     // background-color: green;
-    // }
     .project {
-        // width: 1000px;
-        max-height: 400px;
         display: grid;
-        grid-template-columns: 600px 1fr;
-        height: 600px;
-        // background-color: pink;
+        grid-template-columns: minmax(30%, 600px) 1fr;
         grid-template-rows: 1fr;
     }
-
-}
-
-.img-container.two {
-    background-image: url("../images/searchPaws-coverphoto.png");
-    width: 100%;
-    height: 100%;
-    background-position: 20% 70%;
-    // background-size: cover;
-    // border-radius: 2rem;
-    // min-height: 200px;
-}
-
-.img-container {
-    background-size: cover;
-    border-radius: 2rem;
-    // min-height: 200px;
 }
 
 
-.page {
-    margin-bottom: 5rem;
-}

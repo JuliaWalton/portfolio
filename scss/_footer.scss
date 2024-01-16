@@ -1,55 +1,69 @@
+@use 'root';
+// *******************************************
+// footer styles
+// *******************************************
+
 footer {
-    margin-top: 5rem;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    height: 200px;
-    padding-block: 2rem 1rem;
+    background-color: root.$neutral-black;
+    color: root.$neutral-white;
     display: grid;
+    height: auto;
+    margin-top: 5rem;
+    padding-block: 3rem 1rem;
 }
 
 .footer-container {
     display: flex;
-    // grid-template-columns: 1fr 1fr;
-    gap: 8rem;  
-    // justify-items: center;
+    gap: 3rem;
+    gap: clamp(3rem, 2rem + 5vw, 8rem);
     justify-content: center;
     align-items: center;
-
+    margin-inline: 2rem;
+    padding-bottom: 3rem;
 }
 
-footer .footer-title {
+.footer-title {
     font-size: 2rem;
+    font-size: clamp(2rem, 1.9rem + 0.5vw, 2.5rem);
     padding-bottom: .2rem;
+}
+
+.footer-text p {
+    font-size: 1.15rem;
+    font-size: clamp(1.15rem, 1.0799999999999998rem + 0.3500000000000001vw, 1.5rem);
 }
 
 .email-me {
     font-weight: bold;
-    color: rgb(176, 189, 230);
-}
-
-.footer-text p {
-    font-size: 1.2rem;
+    color: root.$primary-accent-color;
 }
 
 .footer-icons {
     display: flex;
     gap: 2.5rem;
     align-items: center;
+    grid-template-columns: 1fr .5fr .5fr;
+}
+
+.icon {
+    max-width: 60px;
+    aspect-ratio: 1/1;
 }
 
 .copyright {
-    color:rgba(255, 255, 255, 0.539);
+    color:rgba(255, 255, 255, 0.5);
     justify-self: center;
     align-self: end;
     // margin: auto;
 }
 
-.footer-icons a > .icon {
-    max-width: 60px;
-}
-
-.footer-icons i {
-    color: white;
-    font-size: 2.75rem;
-    margin-top: 5px;
+@media (max-width: 990px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    .icon {
+        max-width: 50px;
+    }
 }

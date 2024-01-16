@@ -1,67 +1,64 @@
-/*********************************/
-/************ GENERAL ************/
-/*********************************/
+@use 'root';
+// *******************************************
+// global styles
+// *******************************************
 
 body {
-    font-family: "Be Vietnam Pro", serif;
+    font-family: root.$primary-font;
     background-image: url("../images/bg-bottom.svg"), url("../images/bg-top.svg");
     background-size: 30%;
     background-position: left bottom, right top;
     background-repeat: no-repeat;
-    // display: grid;
+    color: root.$neutral-black;
+    font-size: root.$fs-reg;
 }
 
-.bg-img {
-    display: none;
+.home {
+    font-weight: root.$fw-bold;
+    justify-self: start;
 }
 
-/*** Works on common browsers ***/
-::selection {
-    background-color: rgb(176, 189, 230);
-    color: #fff;
+a:hover {
+    text-decoration: underline;
 }
 
-/*** Mozilla based browsers ***/
-::-moz-selection {
-    background-color: rgb(176, 189, 230);
-    color: #fff;
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 2rem clamp(0rem, -0.2rem + 1vw, 1rem);
 }
 
-/***For Other Browsers ***/
-::-o-selection {
-    background-color: rgb(176, 189, 230);
-    color: #fff;
+.nav-links {
+    display: flex;
+    justify-self: end;
+    gap: 1rem;
+    gap: clamp(0rem, -0.2rem + 1vw, 1rem);
 }
 
-::-ms-selection {
-    background-color: rgb(176, 189, 230);
-    color: #fff;
+nav a {
+    padding: .5rem .75rem;
 }
 
-/*** For Webkit ***/
-::-webkit-selection {
-    background-color: rgb(176, 189, 230);
-    color: #fff;
+.nav-links a:hover {
+    background-color: root.$neutral-black;
+    color: root.$neutral-white;
+    text-decoration: none;
+    border-radius: .5rem;
+}
+
+.title {
+    font-weight: root.$fw-semibold;
+    font-size: 2rem;
+    font-size: clamp(2rem, 2.8vw, 3rem);
 }
 
 
-// button {
-//     background: none;
-//     border: none;
-// }
 
-
-
-// .sketch-snip {
-//     position: absolute;
-//     z-index: -10;
-//     bottom: -10px;
-//     left: 60px;
-//     background-image: url("/images/sketch-snip.png");
-//     // background: pink;s
-//     width: 15.625rem;
-//     width: clamp(15.625rem, 13.125rem + 12.5vw, 28.125rem);
-//     aspect-ratio: 1/1;
-//     background-size: 70%;
-//     background-repeat: no-repeat;
-// }
+@media (max-width: 400px) {
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: end;
+        gap: .5rem;
+    }
+}

@@ -6,44 +6,38 @@
     <!-- favicon -->
     <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💠</text></svg>">
-
     <!-- style sheet -->
     <link rel="stylesheet" href="css/styles.css">
-
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
-
     <!-- javascript -->
     <title>Julia's Portfolio</title>
 </head>
 <body>
     <header>
-        <section class="nav">
-            <a class="nav__resume-link" href="index.html">Julia Walton</alt></a>
-            <ul role="list" class="nav-list">
+        <nav>
+            <a class="home" href="index.html">Julia Walton</a>
+            <ul class="nav-links">
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="mailto:hiitsjuliaw@gmail.com">Contact</a></li>
             </ul>
-        </section>
+        </nav>
     </header>
     <article class="spa-selene">
         <div class="feature-heading-group">
             <h1 class="feature-title">Spa Selene</h1>
             <a class="feature-link" href="https://juliawalton.github.io/spa-selene/" target="_blank">View Live Project</a>
         </div>
-
-        <div class="img-container">
-            <img class="feature-img" src="images/spa-selene-coverphoto.png" alt="">
+        <div class="feature-img-container">
+            <img class="feature-img" src="images/spa-selene-coverphoto.png" alt="spa selene project coverphoto">
         </div>
-
-        <section  class="feature-writeup">
-            <div class="feature-txt-group">
-                <!-- 🌿🌺🪻 /Organization-->
-                <h2 class="feature-heading2">Table of Contents</h2>
+        <section class="feature-writeup">
+            <div class="feature-contents">
+                <h2 class="feature-primary-title">Table of Contents</h2>
                 <p class="feature-desc">
                     <ul class="feature-main-list">
                         <li>Overview</li>
@@ -56,65 +50,28 @@
                             <li>Technologies</li>
                             <li>Development Process</li> 
                             <li>Feature Analysis - Booking Component</li> 
-                            <!-- <li>Active Learning</li> -->
                         </ul>
                         <li>Continued Developement</li>
                         <ul class="feature-sub-list">
                             <li>Key Takeaways</li>
                         </ul>
                     </ul>
-                            <!-- What was your motivation?
-                            Why did you build this project?
-                            What problem does it solve?
-                            What did you learn?
-                            What makes your project stand out?
-                            If your project has a lot of features, consider adding a "Features" section and listing them here. -->
                 </p>
             </div>
-            <div class="feature-txt-group">
-                <h2 class="feature-heading2">Overview</h2>
-                    <h3 class="feature-heading3">Project Goals and Description</h3>
+            <div class="feature-text-content">
+                <h2 class="feature-primary-title">Overview</h2>
+                    <h3 class="feature-secondary-title">Project Goals and Description</h3>
                         <p class="feature-desc">The intention behind the build for Spa Selene was to apply front end patterns I had learned in JavaScript and implement them together to form a full site. This process allowed me to gain greater confidence problem solving with JavaScript and continue flexing my CSS layout muscles. Due to the nature of the buisness the website was chosen to reflex, there were some essential components that should to be incorported. First, a website that offers a menu of services such as a spa needs to fetch, filter, and display related content by category. Also, a form validation component would be necessary to facilitate the exchange of customer information to reserve a service. In my mind, these two concepts formed the primary development features for the site with more general components like an about section, a frequently asked questions section, and a reviews section emplyed to add legitamecy and well rounded aspects to better inform the site's purpose to users.
-                <!-- <br><br>s -->
-                <!-- The site provides a menu of services the spa offers to allow potencial customers to browse and identify offerings that meet their needs. The customer is then able to schedule their appointment online and register their information via the online booking feature.   -->
                         </p>
-                    <h3 class="feature-heading3">Project Timeline</h3>
+                    <h3 class="feature-secondary-title">Project Timeline</h3>
                         <p class="feature-desc">The timeline for Spa Selene was one month. 
                         </p>
-                        <img src="images/spa-selene-timeline.png" alt="">
+                        <img class="timeline-img" src="images/spa-selene-timeline.png" alt="">
             </div>
                 
-            <!-- <div class="feature-txt-group">
-                <h3 class="feature-heading3">Project Description</h3>
-                <p class="feature-desc">
-                    There were a number of javascript patterns I knew would be compatible components for this application. I was confident in a number of the these features due to prior study and mini-projects I've worked through and completed. Namely:
-                    - the responsive and fixed navigation
-                    - displaying a category of data in response to a click event
-                    - the accordion component
-                    - the reviews component
-            
-                    Two specific patterns I knew needed to be implemented but was less clear on how to accomplish was the <span>multistep form validation</span> and <span>its integration with the navigation bar to generate a popup in response to a click</span>.
-            
-                    For the form validation, it took far more trial and error.
-            
-            
-                    A feature I didn't initially expect to run into issues with but later became incorporated significantly into the UI of my site was with background images. I ended up doing a fair share of reading documentation and fiddling to make sure that the background images would remain in a location that made sense and didn't hinder the readability of any information during resize from mobile to desktop. This taught me alot about background images I didn't previously have exposure to.
-                    Javascript patterns practiced
-                    - navigation scroll heights
-                    - fetching a category of data in response to a click event
-                    - multi-step form validation
-                    CSS
-                    - fun mouse hover animations behind the cards
-                    -work with background images to add interest and enhance theme of the site
-                </p>
-            </div> -->
-            <!-- <div class="feature-txt-group">
-                <h2 class="feature-heading2">Project Backstory</h2>
-                <p class="feature-desc">The idea to design a site for a theoretical spa came after I had issues booking a massage service for my partner's birthday. The experience I had using a local buisnesses' site was seriously lacking. For starters, the overall website has UI that appeared to not have been updated since the early days of the internet. Additionally, the online booking form didn't allow me to hit the next button after filling out all correct information. It was borderline unusable. To solve this problem I had the idea to redesign the site and offer my completed work to the buisness for free. After discussion, the buisness was grateful for the interest I took in improving their online presence and made a note of my suggestions for a future overhall of their site. The experience I gained from the process of this project build was invaluable.</p>
-            </div> -->
-            <div class="feature-txt-group">
-                <h2 class="feature-heading2">My Process</h2>
-                <h3 class="feature-heading3">Technologies:</h3>
+            <div class="feature-text-content">
+                <h2 class="feature-primary-title">My Process</h2>
+                <h3 class="feature-secondary-title">Technologies:</h3>
                 <ul class="feature-sub-list">
                     <li>JavaScript (ES6)</li>
                     <li>HTML5 - semantic</li>
@@ -124,7 +81,7 @@
                     <li>Github</li>
                     <li>Photoshop</li>
                 </ul><br>
-                <h3 class="feature-heading3">Development Process </h3>
+                <h3 class="feature-secondary-title">Development Process </h3>
                 <p class="feature-desc">
                     For any project I build from scratch, I start by creating quick sketches of my general vision for the UI and annotate it with my ideas for the functionality. This helps me knock out the design for the application quickly and smoothly. This process is also really helpful for planning purposes because I can get a big picture of the project deliverables and then move forward in identifing and what I know I can tackle quickly as opposed to things I want to accomplish but don't have as much experience implementing. After the planning stage, I coded up my HTML markup with the bones of the design and identified color and font themes to start constructing my SASS variables. As I progressed through the build of the layout, I primarily utilized CSS grid.</p><br>
                     <div class="sketch-container">
@@ -135,7 +92,6 @@
                             <img src="images/sketch-booking.png" alt="">
                             <img src="images/sketch-review.png" alt="">
                     </div>
-                    <!-- add notecard images -->
                     
                     <p class="feature-desc">In the project description, I mentioned there were a number of javascript patterns I knew would be compatible components for this project. I was confident in a number of the these elements due to prior study and mini-projects I've worked through and completed. These features namely being:</p><br>
                     <ul class="feature-sub-list">
@@ -146,11 +102,9 @@
                     </ul><br>
                     <p class="feature-desc">
                     As a result, I was able to build all of the above features for the site in four days. It could have happened faster, but I wanted to explore how to make the UI for these items more interesting. This involved time spent learning how to effectively manipulate background images, animate items in on scroll, and add a mouse hover effect from behind the menu cards. The learning process I follow for most unknown features I sought to implement in the project involved a combination of reading documentation on Mozilla Developer Network, reviewing existing code (via StackOverflow, CodePen, Github), reading blog posts on CSS tricks, and watching youtube video tutorials. Once I was confident in how the code worked, I would build the feature in a seperate standalone file to make sure I understood what I learned and could trouble shoot more easily. Then, I would build the new feature into the main project. </p><br>
-                    <!-- share slide in animation and background cards practices -->
                             <div class="video-container">
-                                <video width="520" height="300" controls loop>
+                                <video width="720" max-height="300" controls loop>
                                     <source src="images/animate-scroll.mp4" type="video/mp4">
-                                    <!-- <source src="movie.ogg" type="video/ogg"> -->
                                     Your browser does not support the video tag.
                                 </video>
                             </div>
@@ -160,8 +114,8 @@
                     multistep form validation and its integration with the navigation bar to generate a popup in response to a click. I had completed single step form validation multiple tismes at this point, so I was excited for the challenge. I watched youtube tutorials and reviewed different codepen's in preparation. I came to find the difficult part was finding a build that was written in vanilla javascript that applied unique validation functions for elements. I combined different strategies realized in the learning phase to achieve the validation for this multistep form functionality. 
                 </p>
             </div>
-            <div class="feature-txt-group">
-                <h3 class="feature-heading3">Feature Analysis - Booking Component</h3>
+            <div class="feature-text-content">
+                <h3 class="feature-secondary-title">Feature Analysis - Booking Component</h3>
                 <p class="feature-desc">My favorite aspect of this project, and what was the most challenging, was the booking component. The steps to accomplishing the
                 functionality I had in mind for the component were as follows:</p><br>
                 <ul class="feature-sub-list">
@@ -181,22 +135,19 @@
                 value and pass it to an error/success function for styling.</p><br>
                 <div class="screenshot-container">
                     <img class="feature-screenshot" src="images/checkGuess-function.png" alt="">
-                    <img class="feature-screenshot1" src="images/error-success-function.png" alt="">
+                    <img class="feature-screenshot2" src="images/error-success-function.png" alt="">
                 </div><br>
-                <!-- checkGuests screenshot -->
                 
                 <p class="feature-desc">Its critial for the functions tied to certain inputs to only run during the matching step/phase of the form. To do this I
                 created a function that would apply a class of "active" to a given form step based on its order in the HTML.</p><br>
-                <!-- screenshot currentStep and showCurrentStep -->
-                <div class="screenshot-container2">
+                <div class="screenshot-container-large">
                     <img class="feature-screenshot" src="images/showCurrentStep-function.png" alt="">
                 </div><br>
                 
                 <p class="feature-desc">Then I was able to use a nested if statement to ensure that, if an element is required and it's on a certain form step,
                 specific custom functions are run. If the result of those function calls output an array where all elements have a class of
                 success, then a next button click would increment the current form step and assign the class of active to it.</p><br>
-                <!-- screenshot input if statement and selects -->
-                <div class="screenshot-container2">
+                <div class="screenshot-container-large">
                     <img class="feature-screenshot" src="images/input-function.png" alt="">
                 </div><br>
                 
@@ -204,106 +155,9 @@
                 <p class="feature-desc">After my work on this component, I have an improved understanding on form validation and can better ensure proper
                 information will be shared with a server.</p>
             </div>
-                    <!-- <p class="feature-desc">There were a number of javascript patterns I knew would be compatible components for this application. I was
-                    confident in a number of the these features due to prior study and mini-projects I've worked through and completed.
-                    Namely:
-                    - the responsive and fixed navigation
-                    - displaying a category of data in response to a click event
-                    - the accordion component
-                    - the reviews component
-                
-                    Two specific patterns I knew needed to be implemented but was less clear on how to accomplish was the
-                    <span>multistep form validation</span> and <span>its integration with the navigation bar to generate a popup in
-                        response to a click</span>.
-                
-                    For the form validation, it took far more trial and error.
-                
-                
-                    A feature I didn't initially expect to run into issues with but later became incorporated significantly into the UI
-                    of my site was with background images. I ended up doing a fair share of reading documentation and fiddling to make
-                    sure that the background images would remain in a location that made sense and didn't hinder the readability of any
-                    information during resize from mobile to desktop. This taught me alot about background images I didn't previously
-                    have exposure to.
-                    Javascript patterns practiced
-                    - navigation scroll heights
-                    - fetching a category of data in response to a click event
-                    - multi-step form validation
-                    CSS
-                    - fun mouse hover animations behind the cards
-                    -work with background images to add interest and enhance theme of the site -->
-                
-                    <!-- <p class="feature-desc">screenshots!!!!!!!!!!!!!!!!!!!!!!!!</p> -->
-                    <!-- <h3 class="feature-heading3">Active Learning</h3>
-                    <p class="feature-desc">
-                        The multistep form functionality. 
-                    </p> -->
-            
-            <!-- <div class="feature-txt-group"> -->
-                <!-- <h2 class="feature-heading2">Project Timeline</h2> -->
-                <!-- <p class="feature-desc">The timeline for this project was a four week design sprint. </p> -->
-            <!-- </div> -->
-            <!-- <div class="feature-txt-group">
-                <h2 class="feature-heading2">🪻 Continued Developement</h2>
-                <h3 class="feature-heading3">What I learned (things im proud of)</h3>
-                <p class="feature-desc">
-                    My favorite aspect of this project, and the most challenging, was the booking component. The steps to accomplishing the functionality I had in mind for the form are as follows:
-
-                    -only certain elements are to be required
-                    -only certain options should be displayed in response to a given option being selected 
-                    -avoid the automatic HTML form validation in favor of custom functions
-                    -those custom functions need to communicate and style elements for an error or success
-                    -determine whether all of the validations returned success or error 
-                    -only run custom functions on the elements related to a corresponding form step
-                    -if all successful, let a button click signal the next step in the form
-                    -if any unsuccessful, stay on current step and display error messages
-
-
-                    The first two goals were accomplished through a simple class of required and switch statement. Custom validation functions were then created in response to associated required elements. The validation functions test the elements value and pass it to an error/success function for styling.
-                    <!- - checkGuests screenshot - ->
-                    
-                    Its critial for the functions tied to certain inputs to only run during the matching step of the form. To do this I created a function that would apply a class of "active" to a given form step/phase based on its order in the HTML. 
-                    <!- - screenshot currentStep and showCurrentStep - ->
-                    
-                    Then I was able to use a nested if statement to ensure if an element is required and it's on a certain form step, to run specific custom functions. If the result of those function calls gave us an array where all elements had a class of success, then a next button click would increment the current form step and assign the class of active to it. 
-                    <!- - screenshot input if statement and selects - ->
-
-
-
-
-
-
-
-                    After my work on this component, I have an improved understanding on form validation and can better ensure only proper information will be shared with a server.
-
-
-
-
-                    The different steps/phases of the multistep form are   
-                    
-                    The brunt of this functionalities work takes place in the nextSteps() function. Here all of the inputs 
-
- 
-
-                    The validation functions needed to communicate an error or success. Then the collection of elements on the active form step are checked to see if they all were successful or an error returned. A nested if statement on the element then checks to see if all the conditions are met: if the item was required, if the associated form step is active, and then if all  
-                    but only be run when a specific step of the form was active. This was accomplished by incrementing or decrementing the index(and active class)in response to click events. Those    
-                    
-                    
-                    After my work on this component, I have more tools in my tool kit to ensure only proper information will being shared with a server. 
-                    
-                    First, I only wanted certain elements to be required in addition to certain elements only being displayed if a corresponding option was checked. It was important to only run functions to validate elements on a specific step. And these functions had to communicate an error or success on the element that would used for styling but also as a check to determine if the user could move on to the next step in the form. 
-
-
-
-
-
-                    It was critial for the functions tied to certain inputs to only run during the matching step or phase of the form validation. To do this I created a function that would apply a class of "active" to a given form step/phase based on its order in the HTML. Once that was set up I needed to set up variables for cases for weather a given element was required by the form, if when the function run it returned a success or error, and if the user wants to go to the next or previous step in the form.
-                </p> -->
-            
-                <!-- <p class="feature-desc">screenshots!!!!!!!!!!!!!!!!!!!!!!!!</p> -->
-            <!-- </div> -->
-            <div class="feature-txt-group">
-                <h2 class="feature-heading2">Continued Developement</h2>
-                <h3 class="feature-heading3">Key Takeaways</h3>
+            <div class="feature-text-content">
+                <h2 class="feature-primary-title">Continued Developement</h2>
+                <h3 class="feature-secondary-title">Key Takeaways</h3>
                 <p class="feature-desc">One of my favorite aspects of this project was incorporating the booking component into a popup from the navigation bar. It makes it possible for both parties to easily accomplish their primary objectives when interacting with the site. With the objectives for the buisness being to schedule more clients for appoitments, and the customer being able to browse and reserve servicesa at their leisure. In the future, I want to continue learning and developing strategies like this that make online applications more seamless for people to accomplish their goals.</p>
             </div>
         </section>

@@ -1,66 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <!-- favicon -->
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💠</text></svg>">
-
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
-
     <!-- style sheet -->
     <link rel="stylesheet" href="css/styles.css">
-
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
-
     <!-- javascript -->
     <script defer src="script.js"></script>
-
     <title>Julia's Portfolio</title>
 </head>
 <body>
     <article class="welcome">
         <header>
-            <section class="nav">
-                    <a class="nav__resume-link" href="index.html">Julia Walton</alt></a>
-                    <!-- <nav class="primary-navigation"> -->
-                        <ul role="list" class="nav-list">
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="resume.html">Resume</a></li>
-                            <li><a href="mailto:hiitsjuliaw@gmail.com">Contact</a></li>
-                        </ul>
-                    <!-- </nav> -->
-            </section>
+            <nav>
+                <a class="home" href="index.html">Julia Walton</a>
+                <ul class="nav-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="mailto:hiitsjuliaw@gmail.com">Contact</a></li>
+                </ul>
+            </nav>
         </header>
             <section class="intro">
-                <div class="intro__text-content">
-                    <h1 class="title">
-                        Hi, <span>I'm Julia - </span>an enthusiastic <span>Front End Developer</span>
-                        with a background in architecture.
+                <div class="intro-text-content">
+                    <h1 class="intro-title title">
+                        Hi, <span>I'm Julia - </span>an enthusiastic <span>Front End Developer</span> with a background in architecture.
                     </h1>
                 </div>
                     <div class="ring">
                         <i style="--clr:#6699ff;"></i>
                         <i style="--clr:#050563;"></i>
-                        <i style="--clr:rgb(176, 189, 230);"></i>
-                       <div class="intro__img"> 
-                            <img class="avatar" src="images/profile-pic.JPG" alt="myavatar"
+                        <i style="--clr:#b0bde6;"></i>
+                        <div class="intro-img"> 
+                            <img class="avatar" src="images/profile-pic.JPG" alt="profile picture"
                             height='100%' width= '100%'>
                         </div>
                     </div>
-                        <div class="intro__tech-stack">
-                            <div class="intro__list contact">
+                        <div class="intro-tech-stack">
+                            <div class="intro-icons contact">
                                 <a href="https://github.com/JuliaWalton" target="_blank"><img class="icon" src="images/github-logo.png" height="20px" width="20px" alt="github"></a>
                                 <a href="https://www.linkedin.com/in/juliawalton/" target="_blank"><img class="icon" src="images/linkedin-logo.png" height="20px" width="20px" alt="linkedin"></a>
                             </div>
                             <p class="sub-title">Tech Stack:</p>
-                            <div class="intro__list">
+                            <div class="intro-icons">
                                 <img class="icon" src="images/react-logo.png" height="20px" width="20px" alt="react">
                                 <!-- <img src="images/nodeJS-logo.png" height="30px" width="30px" alt="nodeJS"> -->
                                 <img class="icon" src="images/JavaScript-logo.png" height="20px" width="20px" alt="javascript">
@@ -72,27 +64,18 @@
                                 <img class="icon" src="images/photoshop-logo.png" height="20px" width="20px" alt="adobe photoshop">
                                 <img class="icon" src="images/illustrator-logo.png" height="20px" width="20px" alt="adobe illustrator">
                                 <img class="icon" src="images/indesign-logo.png" height="20px" width="20px" alt="adobe indesign">
-                                <img class="icon" src="images/Figma-logo.png" height="20px" width="10px" alt="figma">
+                                <img class="icon" src="images/Figma-logo.png" height="20px" width="20px" alt="figma">
                             </div>
-                            
                         </div>
-                        <div class="sketch-snip">
-                        </div>
-                        
             </section>
-            <div class="bg-img">
-                <!-- <img src="images/pattern-bg.png" alt=""> -->
-            </div>
+            <div class="bg-img"></div>
     </article>
-        <main> 
+    <main> 
         <article class="projects">
-            <!-- <div class="grid-container"> -->
                     <a class="project one" href="spa.html">
-                        <div class="img-container one">
-                            <!-- </a> -->
+                        <div class="proj-img-container one">
                         </div>
                         <div class="proj-desc one">
-                            <!-- <a href="/spa-selene/spa.html"></a> -->
                             <div class="proj-desc-container">
                                 <h2 class="proj-desc-title">Spa Selene</h2>
                                 <p class="proj-desc-date">Oct 2023 - Dec 2023</p>
@@ -107,40 +90,34 @@
                                 <img class="icon" src="images/HTML5_shield.svg" height="20px" width="20px" alt="html5">
                                 <img class="icon" src="images/github-logo.png" height="20px" width="20px" alt="github">
                                 <img class="icon" src="images/photoshop-logo.png" height="20px" width="20px" alt="adobe photoshop">
-                                <img class="icon" src="images/Figma-logo.png" height="20px" width="10px" alt="figma">
+                                <img class="icon" src="images/Figma-logo.png" height="20px" width="20px" alt="figma">
                             </div>
                         </div>
                     </a>
-                <div class="project two">
-                    <div class="img-container two">
-                        <a href="spa-selene/spa.html"></a>
-                    </div>
-                    <div class="proj-desc two">
-                        <div class="proj-desc-container">
-                            <h2 class="proj-desc-title">SearchPaws</h2>
-                            <p class="proj-desc-date">Dec 2023 - Current</p>
+                    <a class="project two" href="spa.html">
+                        <div class="proj-img-container two">
                         </div>
-                        <div class="proj-desc-text">
-                            <p class="summary">SearchPaws utlizes the PetFinder API to bring local pets in need to interested adopters. This project generates eligible dogs and cats based on which have most recently been brought into shelters that are the closest proximity to the users location.
-                            </p>
+                        <div class="proj-desc two">
+                            <div class="proj-desc-container">
+                                <h2 class="proj-desc-title">SearchPaws</h2>
+                                <p class="proj-desc-date">Dec 2023 - Current</p>
+                            </div>
+                            <div class="proj-desc-text">
+                                <p class="summary">SearchPaws utlizes the PetFinder API to bring local pets in need to interested adopters. This project generates eligible
+                                dogs and cats based on which have most recently been brought into shelters that are the closest proximity to the users
+                                location.</p>
+                            </div>
+                            <div class="proj-desc-tech-stack">
+                                <img class="icon" src="images/petfinder-logo.png" height="20px" width="20px" alt="sass">
+                                <img class="icon" src="images/JavaScript-logo.png" height="20px" width="20px" alt="javascript">
+                                <img class="icon" src="images/css3_shield.png" height="20px" width="20px" alt="css3">
+                                <img class="icon" src="images/HTML5_shield.svg" height="20px" width="20px" alt="html5">
+                                <img class="icon" src="images/github-logo.png" height="20px" width="20px" alt="github">
+                                <img class="icon" src="images/photoshop-logo.png" height="20px" width="20px" alt="adobe photoshop">
+                                <img class="icon" src="images/Figma-logo.png" height="20px" width="20px" alt="figma">
+                            </div>
                         </div>
-                        <div class="proj-desc-tech-stack">
-                            <img class="icon" src="images/petfinder-logo.png" height="20px" width="20px" alt="sass">
-                            <img class="icon" src="images/JavaScript-logo.png" height="20px" width="20px" alt="javascript">
-                            <img class="icon" src="images/css3_shield.png" height="20px" width="20px" alt="css3">
-                            <img class="icon" src="images/HTML5_shield.svg" height="20px" width="20px" alt="html5">
-                            <img class="icon" src="images/github-logo.png" height="20px" width="20px" alt="github">
-                            <img class="icon" src="images/photoshop-logo.png" height="20px" width="20px" alt="adobe photoshop">
-                            <img class="icon" src="images/Figma-logo.png" height="20px" width="10px" alt="figma">
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="project three">
-                    
-                </div>
-                <div class="project four">
-                </div> -->
-            <!-- </div> -->
+                    </a>
             </article>
     </main>
     <footer>
@@ -151,18 +128,12 @@
                 <p>Send me an <a class="email-me" href="mailto:hiitsjuliaw@gmail.com">email.</a></p>
             </div>
             <div class="footer-icons">
-                <a href="mailto:hiitsjuliaw@gmail.com"><i class="fas fa-envelope"></i></a>
-                <!-- <button><i class="fas fa-phone"></i></button> -->
-                <a href="https://github.com/JuliaWalton" target="_blank"><img class="icon" src="images/github-logo-white.png" height="45px" width="45px" alt="github"></a>
-                <a href="https://www.linkedin.com/in/juliawalton/" target="_blank"><img class="icon" src="images/linkedin-logo-white.png" height="45px" width="45px" alt="linkedin"></a>
+                <a href="mailto:hiitsjuliaw@gmail.com"><img class="icon" src="images/email-icon.png" height="100%" width="100%" alt="email"></a>
+                <a href="https://github.com/JuliaWalton" target="_blank"><img class="icon" src="images/github-logo-white.png" height="100%" width="100%" alt="github"></a>
+                <a href="https://www.linkedin.com/in/juliawalton/" target="_blank"><img class="icon" src="images/linkedin-logo-white.png"  height="100%" width="100%" alt="linkedin"></a>
             </div>
         </div>
-        <!-- <div class="column"> -->
         <p class="copyright">© 2024 copyright all right reserved</p>
-        <!-- </div> -->
-    
     </footer>
-    
-
 </body>
 </html>
