@@ -1,6 +1,6 @@
 # Portfolio Website - Frontend Developer
 
-![Design preview for the Portfolio](./design/desktop-design.png)
+![Design preview for the Portfolio](./images/desktop-design.png)
 
 ## Welcome! 👋
 
