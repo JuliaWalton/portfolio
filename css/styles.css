@@ -135,16 +135,17 @@ nav a {
   display: grid;
   grid-template-rows: auto 1fr;
   height: 100vh;
+  margin-bottom: 3rem;
 }
 
 .intro {
   display: grid;
   gap: 1rem;
   place-items: center;
-  margin-block: 3rem;
-  margin-block: clamp(3rem, 2.4rem + 3vw, 6rem);
-  margin-inline: 2rem;
-  margin-inline: clamp(2rem, 1.4rem + 3vw, 5rem);
+  padding-block: 3rem;
+  padding-block: clamp(3rem, 2.4rem + 3vw, 6rem);
+  padding-inline: 2rem;
+  padding-inline: clamp(2rem, 1.4rem + 3vw, 5rem);
 }
 
 .intro-title {
