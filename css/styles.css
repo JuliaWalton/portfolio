@@ -74,6 +74,35 @@ ul {
     scroll-behavior: auto !important;
   }
 }
+/*** Works on common browsers ***/
+::selection {
+  background-color: rgb(176, 189, 230);
+  color: #fff;
+}
+
+/*** Mozilla based browsers ***/
+::-moz-selection {
+  background-color: rgb(176, 189, 230);
+  color: #fff;
+}
+
+/***For Other Browsers ***/
+::-o-selection {
+  background-color: rgb(176, 189, 230);
+  color: #fff;
+}
+
+::-ms-selection {
+  background-color: rgb(176, 189, 230);
+  color: #fff;
+}
+
+/*** For Webkit ***/
+::-webkit-selection {
+  background-color: rgb(176, 189, 230);
+  color: #fff;
+}
+
 body {
   font-family: "Be Vietnam Pro", serif;
   background-image: url("../images/bg-bottom.svg"), url("../images/bg-top.svg");
@@ -368,11 +397,6 @@ nav a {
 
 .feature-heading-group {
   text-align: center;
-}
-
-.feature-desc, .feature-main-list {
-  font-size: 0.8rem;
-  font-size: clamp(0.8rem, 0.76rem + 0.2vw, 1rem);
 }
 
 .feature-title {

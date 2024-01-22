@@ -17,11 +17,6 @@ $margin-list-item-indent: 3rem;
     text-align: center;
 }
 
-.feature-desc, .feature-main-list {
-    font-size: 0.8rem;
-    font-size: clamp(0.8rem, 0.76rem + 0.19999999999999996vw, 1rem);
-}
-
 .feature-title {
     font-size: root.$fs-xlarge;
     font-weight: root.$fw-bold;

@@ -4,7 +4,7 @@
 
 ## Welcome! 👋
 
-Thanks for checking out my Portfolio!
+Thanks for checking out my Portfolio! This project is a responsive website build to showcase my abilities through real-world projects. Please enjoy browsing it!
 
 ## Table of contents
 
